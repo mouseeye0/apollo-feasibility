@@ -22,10 +22,11 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
+//    implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
     implementation "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter"
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation 'com.apollographql.federation:federation-graphql-java-support:3.0.0'
+    implementation 'com.apollographql.federation:federation-graphql-java-support'
+//    implementation("com.google.protobuf:protobuf-java:0.9.2")
 
     implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-micrometer'
     implementation("org.springframework.boot:spring-boot-starter-actuator")

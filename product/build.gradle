@@ -25,6 +25,10 @@ dependencies {
     implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
     implementation "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter"
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation 'com.apollographql.federation:federation-graphql-java-support:3.0.0'
+
+//    implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-micrometer'
+
 
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
